@@ -1,0 +1,938 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grub Karma-Order</title>
+    <link href="assets/img/favicon.png" rel="icon"> 
+
+
+    <!-- css link here -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- script here -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/lib/greensock/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
+    
+    <!-- extra link here -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+</head>
+<body>
+    <div class="page-content main-pages page-order pos-re">
+        <div class="overal-part top-overal pos-ab">
+            <img src="assets/img/BG/Oval-3.svg">
+        </div>
+        <div class="overal-part bottom-overal pos-ab">
+            <img src="assets/img/BG/Oval-4.svg">
+        </div>
+
+        <div class="page-section-wrapper">
+          <section class="hero-section order-main pos-re jcaic" id="OrderMain" >
+                <div class="order-page-content d-col" style="justify-content: space-between;">
+                    <div class="page-head mb-4">            
+                        <img class="page-title-icon"  src="assets/img/page-icon-order.svg">
+                        <h1 class="page-title big-txt">Order Now</h1>
+                    </div>
+                    <div>
+                        <div class="oder-main-card">
+                            <div class="card-img-wrapper">
+                                <img src="assets/img/ordernow.svg">
+                            </div>
+                            <div class="card-description">
+                                <h3 class="big-txt mb-2">$9.95 Restaurant meals</h3>
+                                <h4 class="def-txt" style="font-weight: bold;">Individually packaged, personal meals</h4>
+                                <h4 class="def-txt" style="color: #ABABAB;">Order now. No subscription required</h4>
+                            </div>
+                        </div>
+                        <div class="next-btn-wrapper mb-5" >
+                            <button class="app-btn red-btn btn-big" id="StartOrder">Start Order</button>
+                        </div>
+                    </div>                    
+                    <div class="page-footer spacer s0"></div>
+                </div>                
+            </section>
+
+            <section class="hero-section order-main jcaic" id="OrderNow" >
+                <div class="order-page-content">
+                    <div class="page-head mb-5">            
+                        <img class="page-title-icon"  src="assets/img/page-icon-order.svg"></img>
+                        <h1 class="page-title big-txt">Order Now</h1>
+                    </div>
+                    <div>
+                        <div class="meal-type-block">
+                            <div class="step-header">
+                                <div class="order-step back-r">1</div>
+                                <h3 class="mid-txt">Select Meal Type</h3>
+                            </div>
+                            <div class="check-radio-box mt-3">
+                                <div class="roles">
+                                    <div class="title-icon-wrapper">
+                                        <img class="page-title-icon"  src="assets/img/lunch.svg">                               
+                                    </div>
+                                    <div class="radio-wrapper">
+                                        <label class="role mb-0" for="lunch" >Lunch</label>
+                                        <input type="radio" name="role" value="lunch" id="lunch">
+                                    </div>
+                                </div>
+                                <div class="roles">                                
+                                    <div class="title-icon-wrapper">
+                                        <img class="page-title-icon"  src="assets/img/dinner.svg">                              
+                                    </div>
+                                    <div class="radio-wrapper">
+                                        <label class="role mb-0" for="dinner" class="">Dinner</label>
+                                        <input type="radio" name="role" value="dinner" id="dinner">
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                       
+                        <div class="zip-check-block">
+                            <div class="step-header">
+                                <div class="order-step back-r">2</div>
+                                <h3 class="mid-txt">Delivery ZIP Check</h3>
+                            </div>
+                            <h4 class="small-txt" style="color: #A3A0A0; line-height: 2.5;">Currently, we deliver to most ZIP codes in New Castle county -DE, Cecil county -MD and Delaware county, PA, and we are constantly adding new delivery ZIP codes.</h4>
+                            <div class="zip-code-input-wrapper mt-4">
+                                <input type="text" class="form-control zip-code-input" id="zipCode" aria-describedby="emailHelp" placeholder="Enter Zipcode">
+                            </div>
+                        </div>
+    
+                        <div class="next-btn-wrapper" >
+                            <button class="app-btn red-btn btn-big" id="MealTypeProcess">Proceed</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="page-footer spacer s0"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero-section  order-main jcaic" id="TimePick">
+                <div class="order-page-content">
+                    <div class="page-head mb-5">            
+                        <img class="page-title-icon"  src="assets/img/page-icon-order.svg">
+                        <h1 class="page-title big-txt">Order Now</h1>
+                    </div>
+                    <div class="zip-check-block">
+                        <div class="step-header mb-4">
+                            <div class="order-step back-r">3</div>
+                            <h3 class="mid-txt">Pick Time</h3>
+                        </div>
+                        <div class="date-time-picker-wrapper">
+                            <div class='date-pickers'>
+                                <div class="form-group">
+                                  <div class='input-group date' id='datetimepicker2'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class='date-pickers'>
+                                <div class="form-group">
+                                  <div class='input-group date' id='datetimepicker3'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-time"></span>
+                                    </span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="delivery-time-wrapper">
+                            <div class="block-title">
+                                <div class="big-dot mr-4" style="background-color: #D59CA3;"></div>
+                                <h4 class="non-peak-text">Discount for non-peak delivery hours : </h4>
+                            </div>
+                            <div class="delivery-save jb mb-2">
+                                <div class=" aic">
+                                    <input type="radio" name="role" value="lunch" id="lunch">
+                                    <label class="role mb-0" for="lunch" >1-2 pm</label>
+                                </div>
+                                <div class="aic">
+                                    <label class="role mb-0" >Save $0.50</label>
+                                </div>
+                            </div>
+
+                            <div class="jb delivery-save">
+                                <div class="aic">
+                                    <input type="radio" name="role" value="lunch" id="lunch">
+                                    <label class="role mb-0" for="lunch" >2-3 pm</label>
+                                </div>
+                                <div class="aic">
+                                    <label class="role mb-0" >Save $0.75</label>
+                                </div>
+                            </div>                  
+                        </div>
+                    </div> 
+
+                    <div class="jb next-btn-wrapper">
+                        <button class="app-btn back-a btn-small" id="TimePickBack" style=" color: #BB969C;">Back</button>
+                        <button class="app-btn red-btn btn-small" id="TimePickNext">Proceed</button>
+                    </div>
+                    <div class="page-footer spacer s0"></div>
+                </div>
+                <script>
+                    $(function () {
+                        $('#datetimepicker1').datetimepicker({
+                            format: 'DD-MM-YYYY LT'
+                        });
+                        $('#datetimepicker2').datetimepicker({
+                            format: 'DD-MM-YYYY'
+                        });
+                        $('#datetimepicker3').datetimepicker({
+                            format: 'LT'
+                        });
+                        $('#datetimepicker3').datetimepicker({
+                            format: 'LT'
+                        });
+                    });
+
+
+                </script>                
+            </section>
+
+
+            <section class="hero-section order-main jcaic" id="SelectMeals">
+                <div class="order-page-content">
+                    <div class="page-head mb-5">            
+                        <img class="page-title-icon" src="assets/img/page-icon-order.svg">
+                        <h1 class="page-title big-txt">Order Now</h1>
+                    </div>
+                    <div class="step-header mb-4">
+                        <div class="order-step back-r">4</div>
+                        <h3 class="mid-txt" >Select Meal</h3>
+                    </div>
+                    <div class="select-meal-nav">
+                        <div class="select-nav-button-wrapper">
+                            <button class="mealnav navActive">All</button>
+                            <button class="mealnav">Popular</button>
+                            <button class="mealnav">VEG</button>
+                            <button class="mealnav">American</button>
+                            <button class="mealnav">Chinese</button>
+                            <button class="mealnav">Indian</button>                            
+                        </div>
+                    </div>
+                    <div class="product-card-wrapper">
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p1.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Chicken Caesar Salad</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum…</p>
+                                <div class="count-wrapper">
+                                    <h1 class="product-cost mt-0 mb-0">$9.75</h1>
+                                    <div class="jcaic">
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-minus"></i></span>
+                                        <h4 class="mt-0 mb-0 conunt-number"><span>1</span></h4>
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-plus"></i></span>   
+                                    </div>                                                                     
+                                </div>
+                            </div>
+                            <div class="product-add-btn">Add</div>
+                        </div>
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p2.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Veggie Delight Sub</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum…</p>
+                                <div class="count-wrapper">
+                                    <h1 class="product-cost mt-0 mb-0">$9.75</h1>
+                                    <div class="jcaic">
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-minus"></i></span>
+                                        <h4 class="mt-0 mb-0 conunt-number"><span>1</span></h4>
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-plus"></i></span>   
+                                    </div>                                                                     
+                                </div>
+                            </div>
+                            <div class="product-remove-btn">Remove</div>                            
+                        </div>
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p3.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Personal Pizza</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                                <div class="count-wrapper">
+                                    <h1 class="product-cost mt-0 mb-0">$9.75</h1>
+                                    <div class="jcaic">
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-minus"></i></span>
+                                        <h4 class="mt-0 mb-0 conunt-number"><span>1</span></h4>
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-plus"></i></span>   
+                                    </div>                                                                     
+                                </div>
+                            </div>
+                            <div class="product-add-btn">Add</div>
+                        </div>
+
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p3.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Personal Pizza</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum…</p>
+                                <div class="count-wrapper">
+                                    <h1 class="product-cost mt-0 mb-0">$9.75</h1>
+                                    <div class="jcaic">
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-minus"></i></span>
+                                        <h4 class="mt-0 mb-0 conunt-number"><span>1</span></h4>
+                                        <span class="count-icon mt-0 mb-0"><i class="fa fa-plus"></i></span>   
+                                    </div>                                                                     
+                                </div>
+                            </div>
+                            <div class="product-add-btn">Add</div>
+                        </div>
+                    </div>
+                    <div class="page-footer spacer s0"></div>
+                </div>
+                <div class="total-product">
+                    <div class="total-sub-part d-f">
+                        <img src="assets/img/icon_Shopping_redbag.svg">
+                        <h5 class="ml-2">2 Items</h5>
+                    </div>
+                    <div class="total-sub-part">
+                        <h3 class="m-0">$19.50</h3>
+                    </div>
+                </div>
+            </section> 
+
+            <section class="hero-section order-main jcaic" id="OpenedMeal">
+                <div class="order-page-content">
+                    <div class="top-product-back pos-re">
+                        <img src="assets/img/BG/BitmapA.jpg">                    
+                    </div>
+                    <div class="max-width400-part open-meal-content">
+                        <h2 class="big-txt">Veggie Delight Sub</h2>
+                        <p class="product-detail-txt" style="line-height:2.5;">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed </p>
+                        <h3 class="mid-txt mt-5 mb-4" style="font-size: 15px; font-weight:bold;">Ingridients</h3>
+                        <div class="delivery-time-wrapper" style="background-color:white; border-radius: 8px; border: 2px solid #f1d7db;">
+                            <div class="delivery-save jb mb-3">
+                                <div class="aic">
+                                    <input type="radio" name="role" value="lunch" id="lunch">
+                                    <label class="role mb-0" for="lunch" style="color: black;">1 bag of potato chips (150 cal) </label>
+                                </div>
+                            </div>    
+                            <div class="jb delivery-save mb-0">
+                                <div class="aic">
+                                    <input type="radio" name="role" value="lunch" id="lunch">
+                                    <label class="role mb-0" for="lunch" style="color: black;">2 chocolate chip cookies (200 cal)</label>
+                                </div>
+                            </div>                  
+                        </div>
+                       
+                        <div class="jb" style="margin-top: 75px;">
+                            <div class="add-cart-wrapper">
+                                <div class="cart-add-icon-wrapper">-</div>
+                                <h5 class="mr-4 ml-4">1</h5>
+                                <div class="cart-add-icon-wrapper plusactive">+</div>
+                            </div>
+                            <h3 class="mt-0 mb-0">$9.75</h3>
+                        </div>                       
+                    </div>
+                    <div class="cart-alram">
+                        No Delivery Fees.  No Services Fees. No Tipping
+                    </div>
+                    <div class="back-r add-cart-big-btn jcaic" id="AddToCart">Add To Cart</div>
+                </div>
+            </section>
+
+            <section class="hero-section order-main jcaic" id="MyOrder">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="MyOderBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>My Order</h3>
+                        </div>
+                        <div class="title-start-btn jcaic">Start Over</div>
+                    </div>
+                    <div class="product-card-wrapper mt-4">
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p1.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Chicken Caesar Salad</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                                <div class="count-wrapper">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <div class="cart-add-icon-wrapper">-</div>
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                        <div class="cart-add-icon-wrapper plusactive">+</div>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div>
+
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p2.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Veggie Delight Sub</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                                <div class="count-wrapper">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <div class="cart-add-icon-wrapper">-</div>
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                        <div class="cart-add-icon-wrapper plusactive">+</div>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div> 
+                    </div> 
+                    <div class="spacer s1"></div>
+                    <div class="hour-discount-description jb aic ma mb-4">
+                      <div class="d-f">
+                          <img src="assets/img/Shape22.svg">
+                          <p class="aic">Non-Peak Hours Discount</p>
+                      </div>  
+                      <div>
+                          <p class="color-r">$ 0.75</p>
+                      </div>
+                    </div>
+                    <div class="app-btn red-btn btn-big ma" id="ProceedCheckoutButton">Proceed To Checkout</div>                    
+                </div>                
+            </section>
+
+
+            <section class="hero-section order-main jcaic" id="NotEnoughPrice">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="NotEnoughBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>My Order</h3>
+                        </div>
+                        <div class="title-start-btn jcaic" id="NotEnoughStartOver">Start Over</div>
+                    </div>
+                    <div class="product-card-wrapper mt-4">
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p1.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Chicken Caesar Salad</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                                <div class="count-wrapper">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <div class="cart-add-icon-wrapper">-</div>
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                        <div class="cart-add-icon-wrapper plusactive">+</div>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div>
+                    </div> 
+                    <div class="spacer s2"></div>
+                    <div class="not-enough-message jb aic ma mb-4">
+                        <div class="block-title">
+                            <div class="big-dot mr-2" style="background-color: #F66978;"></div>
+                            <h4 class="non-peak-text" style="color: #FF7785; font-size: 11px;">Select at least 1 more meal to compete order</h4>
+                        </div>
+                    </div>
+                    <div class="app-btn btn-big ma" style="background-color: #D6CCCD; color: white;">Proceed To Checkout</div>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section>
+
+            <section class="hero-section order-main jcaic" id="CreateAccount">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="CreateAccountBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Create Account</h3>
+                        </div>
+                    </div>
+                    <div class="create-account-form">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input type="text" class="form-control" id="firstname"  placeholder="Put Your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname"  placeholder="Put Your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confrim Your Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <p class="already-text">Already Have an account? <span style="color: #DE4959;">Log In</span></p>
+                    <div class="app-btn red-btn btn-big ma" id="AccountCreateButton" style="width: 300px;">Create</div>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section>
+
+
+            <section class="hero-section order-main jcaic" id="LogInPage" >
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="LogInBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Log In To Account</h3>
+                        </div>
+                    </div>
+                    <div class="oder-main-card mt-4" style="border-radius: 19px 19px 0 0;">
+                        <div class="card-img-wrapper">
+                            <img src="assets/img/login-carton.svg">
+                        </div>
+                        <div class="create-account-form" style="width: 100%;">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="app-btn red-btn btn-big ma mb-3" id="LogInButton">Log In</div>
+                    <p class="already-text">New Customer? <span style="color: #DE4959;">Sign Up</span></p>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section> 
+
+            
+            <section class="hero-section order-main jcaic" id="DeliveryInformation">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader ">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="DeliveryInformationBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Delivery Information</h3>
+                        </div>
+                    </div>
+                    <div class="create-account-form">
+                        <div class="form-group">
+                            <label for="firstname">First Name <span class="required-mark">*</span> </label>
+                            <input type="text" class="form-control" id="firstname"  placeholder="Put Your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name <span class="required-mark">*</span> </label>
+                            <input type="text" class="form-control" id="lastname"  placeholder="Put Your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" class="form-control" id="company"  placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="address1">Address Line 1 <span class="required-mark">*</span> </label>
+                            <input type="text" class="form-control" id="address1"  placeholder="Address Line 1">
+                        </div>
+                        <div class="form-group">
+                            <label for="address2">Address Line 2</label>
+                            <input type="text" class="form-control" id="address2"  placeholder="Address Line 2">
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City <span class="required-mark">*</span> </label>
+                            <input type="text" class="form-control" id="city"  placeholder="City">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                              <label for="inputState">State</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-6">
+                              <label for="inputZip">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone <span class="required-mark">*</span></label>
+                            <input type="text" class="form-control" id="phone"  placeholder="Phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail <span class="required-mark">*</span> </label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Delivery Instructions</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <p class="already-text">Already Have an account? <span style="color: #DE4959;">Log In</span></p>
+                    <div class="app-btn red-btn btn-big ma" id="DeliveryProceedButton" style="width: 300px;">Proceed</div>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section> 
+
+            <section class="hero-section order-main jcaic" id="OrderSummaryPage">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="SummaryBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Order Summary</h3>
+                        </div>
+                    </div>
+                    <div class="product-card-wrapper sumary-product-card-wrapper mt-4">
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p1.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Chicken Caesar Salad</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                                <div class="count-wrapper">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <div class="cart-add-icon-wrapper">-</div>
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                        <div class="cart-add-icon-wrapper plusactive">+</div>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p2.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Veggie Delight Sub</h3>
+                                <p class="product-detail-txt">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                                <div class="count-wrapper">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <div class="cart-add-icon-wrapper">-</div>
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                        <div class="cart-add-icon-wrapper plusactive">+</div>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div> 
+                    </div> 
+            
+                    <div class="coupon-input-wrapper">
+                        <h3 class="mid-txt mt-0 mb-3 pl-3" style="font-size: 15px;">Promocode/Coupon</h3>
+                        <form class="form-inline jb">               
+                            <div class="form-group col-7 mb-0 p-0">
+                              <label for="Coupon" class="sr-only">Promocode/Coupon</label>
+                              <input type="text" class="form-control" id="Coupon" placeholder="Discount">
+                            </div>
+                            <button type="submit" class="">Apply</button>
+                        </form>
+                    </div>
+            
+                    <div class="order-sumary">
+                        <div class="sumary-line jb">
+                            <h4>Subtotal</h4>
+                            <h4>$18.50</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Non-Peak Hour Discount</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Delivery Fee</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Service Fee</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Discount</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Total</h4>
+                            <h3>$18.50</h3>
+                        </div>
+                    </div>
+                    <div class="app-btn red-btn btn-big ma mt-4" id="PayAmount">Pay $18.50</div>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section>
+
+            <section class="hero-section order-main jcaic" id="PaymentPage">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader ">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="PaymentBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Payment</h3>
+                        </div>
+                    </div>
+                    <div class="create-account-form">
+                        <div class="form-group">
+                            <label for="firstname">Cardholder Name <span class="required-mark">*</span> </label>
+                            <input type="text" class="form-control" id="firstname"  placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Card Number <span class="required-mark">*</span> </label>
+                            <input type="text" class="form-control" id="lastname"  placeholder="Card Number">
+                        </div>  
+                        <div class="row">
+                            <div class="form-group col-4 pr-1">
+                                <label for="month">Expire Date</label>
+                                <select class="form-control " id="month">
+                                    <option>MM</option>
+                                    <option>.....</option>              
+                                </select>
+                            </div>        
+                            <div class="form-group col-4 pl-1">
+                                <label for="month" style="opacity: 0;">select</label>
+                                <select class="form-control " id="year">
+                                    <option>YY</option>
+                                    <option>.....</option>              
+                                </select>
+                            </div>    
+                            <div class="form-group col-4">
+                                <label for="cvv">CVV Code</label>
+                                <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                              </div>
+                        </div>          
+                    </div>
+                    <div style="height: 60px;"></div>
+                    <div class="order-sumary">
+                        <div class="sumary-line jb">
+                            <h4>Discount</h4>
+                            <h4>$0.00</h4>
+                        </div>
+                        <div class="sumary-line jb">
+                            <h4>Total</h4>
+                            <h3>$18.50</h3>
+                        </div>
+                    </div>
+                    <div class="app-btn red-btn btn-big ma mt-4" id="PayButton" style="widows: 300px;">Pay</div>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section>
+        </div>
+
+        <div class="footer-nav">
+            <a href="./orderNow.html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="18.073" height="18.073" viewBox="0 0 18.073 18.073">
+                            <g id="Burger_1_">
+                              <path id="Path" d="M14.367,4.236H3.706A3.711,3.711,0,0,1,0,.529.529.529,0,0,1,.529,0H17.544a.529.529,0,0,1,.529.529A3.711,3.711,0,0,1,14.367,4.236Z" transform="translate(0 13.837)" fill="#de4959"/>
+                              <path id="Shape" d="M.529,7.412A.529.529,0,0,1,0,6.883C0,3.088,4.073,0,9.037,0s9.036,3.088,9.036,6.883a.529.529,0,0,1-.529.529Z" fill="#de4959"/>
+                            </g>
+                            <g id="Burger_4_" transform="translate(0 9.566)">
+                              <g id="Group">
+                                <path id="Path-2" data-name="Path" d="M.529,0A2.492,2.492,0,0,1,1.2.085a3.443,3.443,0,0,0-.138,1.059,1.456,1.456,0,0,0-.529-.085A.524.524,0,0,1,0,.529.524.524,0,0,1,.529,0Z" fill="#de4959"/>
+                                <path id="Path-3" data-name="Path" d="M1.2.529a.524.524,0,0,1-.529.529,1.456,1.456,0,0,0-.529.085A3.663,3.663,0,0,0,0,.085,2.492,2.492,0,0,1,.667,0,.524.524,0,0,1,1.2.529Z" transform="translate(16.876)" fill="#de4959"/>
+                              </g>
+                            </g>
+                            <path id="Path-4" data-name="Path" d="M0,1.144a2.756,2.756,0,0,1,1.059.551,1.6,1.6,0,0,0,1.1.424,1.572,1.572,0,0,0,1.091-.424,2.7,2.7,0,0,1,1.761-.635,2.6,2.6,0,0,1,1.737.635,1.616,1.616,0,0,0,2.182,0,2.6,2.6,0,0,1,1.737-.635,2.7,2.7,0,0,1,1.761.635,1.573,1.573,0,0,0,1.091.424,1.6,1.6,0,0,0,1.1-.424,2.757,2.757,0,0,1,1.059-.551A3.665,3.665,0,0,0,15.143,0H.537A3.665,3.665,0,0,0,0,1.144Z" transform="translate(1.197 8.507)" fill="#de4959"/>
+                            <path id="Path-5" data-name="Path" d="M15.288,2.118A3.669,3.669,0,0,0,15.955.085a2.206,2.206,0,0,0-.561.339,2.6,2.6,0,0,1-1.737.635A2.59,2.59,0,0,1,11.931.424,1.665,1.665,0,0,0,10.805,0,1.6,1.6,0,0,0,9.7.424a2.567,2.567,0,0,1-1.726.635A2.567,2.567,0,0,1,6.252.424,1.6,1.6,0,0,0,5.15,0,1.665,1.665,0,0,0,4.024.424,2.59,2.59,0,0,1,2.3,1.059,2.6,2.6,0,0,1,.561.424,2.206,2.206,0,0,0,0,.085,3.669,3.669,0,0,0,.667,2.118Z" transform="translate(1.059 10.625)" fill="#de4959"/>
+                          </svg>                                            
+                    </div>
+                    <p class="color-r mt-2">order now</p>
+                    <div class="page-active-mark back-r"></div>
+                </div>
+            </a>
+
+            <a href="./subscribe.html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg id="box" xmlns="http://www.w3.org/2000/svg" width="21.6" height="17.088" viewBox="0 0 21.6 17.088">
+                            <path id="Path" d="M13.836,0l-.32,1.338H8.085L7.764,0H0L2.284,4.127H19.316L21.6,0Z" transform="translate(0 12.961)" fill="#707070"/>
+                            <path id="Path-2" data-name="Path" d="M19.316,0H2.284L0,4.127H21.6Z" transform="translate(0 7.569)" fill="#707070"/>
+                            <path id="Path-3" data-name="Path" d="M1.468,2.882a1.381,1.381,0,0,1-.2-.767,1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23,2.6,2.6,0,0,0,1.468,2.882Z" transform="translate(5.054)" fill="#707070"/>
+                            <path id="Path-4" data-name="Path" d="M1.468,2.882a1.381,1.381,0,0,1-.2-.767,1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23,2.6,2.6,0,0,0,1.468,2.882Z" transform="translate(8.28)" fill="#707070"/>
+                            <path id="Path-5" data-name="Path" d="M1.265,2.115a1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23a2.6,2.6,0,0,0-.345-1.349A1.381,1.381,0,0,1,1.265,2.115Z" transform="translate(11.507)" fill="#707070"/>
+                            <path id="Path-6" data-name="Path" d="M1.265,2.115a1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23a2.6,2.6,0,0,0-.345-1.349A1.381,1.381,0,0,1,1.265,2.115Z" transform="translate(14.733)" fill="#707070"/>
+                          </svg>
+                                              
+                    </div>
+                    <p>Subscribe</p>
+                </div>
+            </a>
+            
+
+            <a href="./catering .html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg id="buffet" xmlns="http://www.w3.org/2000/svg" width="20.7" height="18" viewBox="0 0 20.7 18">
+                            <path id="Path" d="M0,0V1.2H1.485L2.7,3.6H8.3L7.487,6H6.1V7.2H14.6V6H13.213L12.4,3.6H18l1.213-2.4H20.7V0Z" transform="translate(0 10.8)" fill="#707070"/>
+                            <path id="Shape" d="M0,9.9A9.255,9.255,0,0,1,7.335,2.63a1.837,1.837,0,1,1,3.33,0A9.255,9.255,0,0,1,18,9.9Z" transform="translate(1.8)" fill="#707070"/>
+                          </svg>
+                                                
+                    </div>
+                    <p>Catering</p>
+                </div>
+            </a>
+
+            <a href="./profile.html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18.218" viewBox="0 0 19 18.218">
+                            <g id="profile-user" transform="translate(0.5 0.5)">
+                              <path id="Subtraction_1" data-name="Subtraction 1" d="M-52,6907.717a8.821,8.821,0,0,1-9-8.609,8.822,8.822,0,0,1,9-8.609,8.821,8.821,0,0,1,9,8.609A8.82,8.82,0,0,1-52,6907.717Zm-1.732-7.56a2.95,2.95,0,0,0-3.016,2.871,1.19,1.19,0,0,0,.446.922,6.816,6.816,0,0,0,4.3,1.517,6.809,6.809,0,0,0,4.3-1.519,1.189,1.189,0,0,0,.444-.921,2.789,2.789,0,0,0-.88-2.034,3.072,3.072,0,0,0-2.131-.837Zm1.732-7.083a2.918,2.918,0,0,0-2.977,2.848A2.917,2.917,0,0,0-52,6898.769a2.917,2.917,0,0,0,2.977-2.847A2.918,2.918,0,0,0-52,6893.074Z" transform="translate(61 -6890.499)" fill="#707070" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <p>Profile</p>
+                </div>
+            </a> 
+        </div>
+
+    </div>   
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+       $(document).ready(function(){
+            $("#StartOrder").click(function(){
+                var t1 = new TimelineMax();
+			        t1.staggerTo("#OrderMain", 1, {'opacity':0, ease: Power4.easeOut}, 1.5);
+			        t1.staggerTo("#OrderNow", 0.5, {left:0,'opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#MealTypeProcess").click(function(){
+                var t1 = new TimelineMax();
+			        t1.staggerTo("#OrderNow", 1, {'opacity':0, ease: Power4.easeOut}, 1.5);
+			        t1.staggerTo("#TimePick", 1, {x:'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#TimePickBack").click(function(){
+                var t1 = new TimelineMax();
+			        t1.staggerTo("#TimePick", 1, {'opacity':0, ease: Power4.easeOut}, 1.5);
+                    t1.staggerTo("#OrderNow", 1, {'opacity':1, ease: Power4.easeOut}, 1.5);			                          
+            });
+
+            $("#TimePickNext").click(function(){
+                var t1 = new TimelineMax();
+                t1.staggerTo("#TimePick", 0.5, {y:'100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t1.staggerTo("#SelectMeals", 0.5, {y:'-100vh','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $(".next-go").click(function(){
+                var t2 = new TimelineMax();
+                t2.staggerTo("#SelectMeals", 0.5, {x:'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t2.staggerTo("#OpenedMeal", 0.5, {'left':'0','opacity':1, ease: Power4.easeOut}, 0.5);
+                t2.staggerTo(".footer-nav", 1, {y:'150px','opacity':0, ease: Power4.easeOut}, 1.5);              
+            });
+
+            $("#AddToCart").click(function(){
+                console.log("dksfjdsk");
+                var t2 = new TimelineMax();
+                t2.staggerTo("#OpenedMeal", 0.5, {x:'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t2.staggerTo("#MyOrder", 0.5, {'opacity':1,y:'100vh', ease: Power4.easeOut}, 0.5);
+                t2.staggerTo(".footer-nav", 1, {y:'0','opacity':1, ease: Power4.easeOut}, 1.5);              
+            });
+
+            $("#MyOderBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#MyOrder", 0.5, {y:'-100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#OpenedMeal", 0.5, {x:0,'opacity':1, ease: Power4.easeOut}, 0.5);
+                t3.staggerTo(".footer-nav", 1, {y:'150px','opacity':0, ease: Power4.easeOut}, 1.5);              
+            });
+
+            $("#ProceedCheckoutButton").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#MyOrder", 0.5, {x:'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#NotEnoughPrice", 0.5, {'right':'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#NotEnoughBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#NotEnoughPrice", 0.5, {'right':'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#MyOrder", 0.5, {x:'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#NotEnoughStartOver").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#NotEnoughPrice", 0.5, {'right':'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#CreateAccount", 0.5, {'top':0,'opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#CreateAccountBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#CreateAccount", 0.5, {'top':'100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#NotEnoughPrice", 0.5, {'right':'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#AccountCreateButton").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#CreateAccount", 0.5, {'top':'100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#LogInPage", 0.5, {'left':'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#LogInBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#LogInPage", 0.5, {'left':'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#CreateAccount", 0.5, {'top':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+             $("#LogInButton").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#LogInPage", 0.5, {'left':'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#DeliveryInformation", 0.5, {'top':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+             $("#DeliveryInformationBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#DeliveryInformation", 0.5, {'top':'-100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#LogInPage", 0.5, {'left':'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#DeliveryProceedButton").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#DeliveryInformation", 0.5, {'top':'100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#OrderSummaryPage", 0.5, {'left':'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#SummaryBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#OrderSummaryPage", 0.5, {'left':'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#DeliveryInformation", 0.5, {'top':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            
+            $("#PayAmount").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#OrderSummaryPage", 0.5, {'left':'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#PaymentPage", 0.5, {'right':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+             $("#PaymentBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#PaymentPage", 0.5, {'right':'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#OrderSummaryPage", 0.5, {'left':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+
+       });        	
+    </script>
+</body>
+</html>

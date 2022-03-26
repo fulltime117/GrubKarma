@@ -1,0 +1,797 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grub Karma-Profile</title>
+    <link href="assets/img/favicon.png" rel="icon"> 
+
+
+    <!-- css link here -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- script here -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/lib/greensock/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="assets/js/lib/greensock/TweenMax.min.js"></script>
+    
+    <!-- extra link here -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+</head>
+<body>
+    <div class="page-content main-pages page-profile pos-re">
+        <div class="overal-part top-overal pos-ab">
+            <img src="assets/img/BG/Oval-3.svg">
+        </div>
+        <div class="overal-part bottom-overal pos-ab">
+            <img src="assets/img/BG/Oval-4.svg">
+        </div>
+
+        <div class="page-section-wrapper">
+            <section class="hero-section order-main jcaic animate__animated animate__bounceInDown" id="P_SignIn" >
+                <div class="order-page-content">
+                    <div class="page-head mb-5"> 
+                        <h1 class="page-title big-txt">Profile</h1>
+                    </div>
+                    <div class="profile-card-wrapper">
+                        <div class="profiel-card">
+                            <div class="aic">
+                                <img src="assets/img/p_subscrip.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> My Subscriptions </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+                        <div class="profiel-card">
+                            <div class="aic">
+                                <img src="assets/img/p_order.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> My Orders </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+
+                        <div class="profiel-card">
+                            <div class="aic">
+                                <img src="assets/img/p_merchandise.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> Merchandise </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+
+                        <div class="profiel-card">
+                            <div class="aic">
+                                <img src="assets/img/p_manage.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> Manage Account </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+
+                        <div class="profiel-card" id="P_SignInButton">
+                            <div class="aic">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0 color-r ml-5"> Sign In </h3>    
+                            </div>                                                       
+                        </div>
+                    </div>
+                    <div class="page-footer spacer s0"></div>
+                </div>                
+            </section>
+            <!-- profile2 login -->
+            <section class="hero-section order-main jcaic" id="LogInPage" >
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="LogInBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Log In To Account</h3>
+                        </div>
+                    </div>
+                    <div class="oder-main-card mt-4" style="border-radius: 19px 19px 0 0;">
+                        <div class="card-img-wrapper">
+                            <img src="assets/img/login-carton.svg">
+                        </div>
+                        <div class="create-account-form" style="width: 100%;">
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="app-btn red-btn btn-big ma mb-3" id="LogInButton">Log In</div>
+                    <p class="already-text">New Customer? <span style="color: #DE4959;">Sign Up</span></p>
+                    <div class="spacer s0 mb-5"></div>
+                </div>                
+            </section> 
+
+            <!-- FullProfile profile -->
+            <section class="hero-section order-main jcaic animate__animated animate__bounceInDown" id="FullProfile" >
+                <div class="order-page-content">
+                    <div class="page-head mb-5"> 
+                        <h1 class="page-title big-txt">Profile</h1>
+                    </div>
+                    <div class="profile-card-wrapper">
+                        <div class="profiel-card" id="goSubscriptons">
+                            <div class="aic">
+                                <img src="assets/img/p_subscrip.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> My Subscriptions </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+                        <div class="profiel-card" id="goMyorders">
+                            <div class="aic">
+                                <img src="assets/img/p_order.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> My Orders </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+
+                        <div class="profiel-card">
+                            <div class="aic">
+                                <img src="assets/img/p_merchandise.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> Merchandise </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+
+                        <div class="profiel-card" id="goManage">
+                            <div class="aic">
+                                <img src="assets/img/p_manage.svg">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0"> Manage Account </h3>    
+                            </div>
+                            <div>
+                                <i class="fa fa-angle-right"></i>
+                            </div>                            
+                        </div>
+
+                        <div class="profiel-card" id="P_SignInButton">
+                            <div class="aic">
+                                <h3 class="mid-txt ml-3 mt-0 mb-0 color-r ml-5"> LogOut </h3>    
+                            </div>                                                       
+                        </div>
+                    </div>
+                    <div class="page-footer spacer s0"></div>
+                </div>                
+            </section>
+
+
+            <!-- profile4 My Subscriptions -->
+
+            <section class="hero-section order-main jcaic" id="P_Subscription" >
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="p_subsBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>My Subscriptions</h3>
+                        </div>
+                    </div>
+                    <div class="meal-type-block mt-3">
+                        <div class="check-radio-box mt-3">
+                            <div class="roles" id="GoHomeSubscription">
+                                <div class="title-icon-wrapper">
+                                    <img class="page-title-icon"  src="assets/img/home.svg">                               
+                                </div>
+                                <div style="width: 65%;">
+                                    <h3 class="mid-txt mt-4">Home Subscription</h3>
+                                    <h3 class="mid-txt color-r">3 day</h3>
+                                    <p style="color: #B9AAAC;">Wedneday, Thursday, Saturday</p>
+                                    <h4 class="small-txt color-g">12 meals <span style="color: #848484;">/month</span></h4>
+                                    <h3 class="small-txt subscrip-statu mt-1" style="color: #2DAA30;" >Active</h3>
+                                </div>
+                            </div>
+                            <div class="roles">                                
+                                <div class="title-icon-wrapper">
+                                    <img class="page-title-icon"  src="assets/img/office.svg">                              
+                                </div>
+                                <div style="width: 65%;">
+                                    <h3 class="mid-txt mt-4">Office Subscription</h3>
+                                    <h3 class="mid-txt color-r">3 day</h3>
+                                    <p style="color: #B9AAAC;">Wedneday, Thursday, Saturday</p>
+                                    <h4 class="small-txt color-g">12 meals <span style="color: #848484;">/month</span></h4>
+                                    <h3 class="small-txt subscrip-statu mt-1" style="color: #F9233A;" >Cancelled</h3>
+                                </div>
+                            </div>                               
+                        </div>
+                    </div>
+                </div>                
+            </section>
+
+
+            <!-- profile5  Home Subscription -->
+
+            <section class="hero-section  order-main jcaic" id="P_HomeSubscriptionPage">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="p_homesubsBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>My Subscriptions</h3>
+                        </div>
+                    </div>
+            
+                    <h3 class="mid-txt pl-3"> Meal Type </h3>
+                    <div class="meal-type-block">
+                        <div class="check-radio-box mt-3">
+                            <div class="roles">
+                                <div class="title-icon-wrapper">
+                                    <img class="page-title-icon"  src="assets/img/lunch.svg">                               
+                                </div>
+                                <div class="radio-wrapper">
+                                    <label class="role mb-0" for="lunch" >Lunch</label>
+                                    <input type="radio" name="role" value="lunch" id="lunch">
+                                </div>
+                            </div>
+                            <div class="roles">                                
+                                <div class="title-icon-wrapper">
+                                    <img class="page-title-icon"  src="assets/img/dinner.svg">                              
+                                </div>
+                                <div class="radio-wrapper">
+                                    <label class="role mb-0" for="dinner" class="">Dinner</label>
+                                    <input type="radio" name="role" value="dinner" id="dinner">
+                                </div>
+                            </div>                               
+                        </div>
+                    </div>
+            
+                    <h3 class="mid-txt pl-3"> Delivery Window </h3>
+                    <div class="zip-check-block mt-3">
+                        <div class="roles">
+                            <div class="jb aic w-100">
+                                <label class="role mb-0" for="peack1" class="" style="width: 90%;">
+                                    <p style="color: #4C4C4C; font-weight: 100; font-size: 15px;">12:00 am - 01:00 pm</p>
+                                    <span style="font-size: 13px; color: #8B8B8B; font-weight: 100;">Peak delivery time</span>
+                                </label>
+                                <input type="radio" name="role" value="peack1" id="peack1">
+                            </div>
+                        </div>
+            
+                        <div class="roles">
+                            <div class="jb aic w-100 mt-3">
+                                <label class="role mb-0" for="peack2" class="" style="width: 90%;">
+                                    <p style="color: #4C4C4C; font-weight: 100; font-size: 15px;">01:00 am - 02:00 pm</p>
+                                    <span style="font-size: 13px; color: #8B8B8B; font-weight: 100;">$0.50  off/meal</span>
+                                </label>
+                                <input type="radio" name="role" value="peack2" id="peack2">
+                            </div>
+                        </div>
+            
+                        <div class="roles">
+                            <div class="jb aic w-100 mt-3">
+                                <label class="role mb-0" for="peack2" class="" style="width: 90%;">
+                                    <p style="color: #4C4C4C; font-weight: 100; font-size: 15px;">02:00 pm - 03:00 pm</p>
+                                    <span style="font-size: 13px; color: #8B8B8B; font-weight: 100;">$0.75  off/meal</span>
+                                </label>
+                                <input type="radio" name="role" value="peack2" id="peack2">
+                            </div>
+                        </div>            
+                    </div>
+            
+                    <div class="meal-type-block">
+                        <div class="step-header mb-3">
+                            <h3 class="mid-txt  mt-2">Choose Delivery Days</h3>
+                        </div>
+            
+                        <div class="delivery-day-pick mt-3">
+                            <div class="delivery-day-item">MON</div>
+                            <div class="delivery-day-item">TUE</div>
+                            <div class="delivery-day-item dayactive">WED</div>
+                            <div class="delivery-day-item dayactive">THU</div>
+                            <div class="delivery-day-item">FRI</div>
+                            <div class="delivery-day-item dayactive">SAT</div>
+                            <div class="delivery-day-item">SUN</div>
+                        </div>
+            
+                        <div class="day-plan mt-4 mb-4">
+                            <div class="day-plan-content jcaic ma" style="width: 98%;"> 
+                                <div class="col-4">
+                                    <img src="assets/img/lunch.svg">
+                                </div>
+                                <div class="col-8">
+                                    <h3 class="mid-txt color-r">3 day</h3>
+                                    <p style="color: #B9AAAC;">Wedneday, Thursday, Saturday</p>
+                                    <h4 class="small-txt">12 meals <span style="color: #848484;">/month</span></h4>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="zip-check-block">
+                            <div class="step-header mb-3">
+                                <h3 class="mid-txt mt-4">Choose number of Meals/delivery</h3>
+                            </div>
+                
+                            <div class="delivery-number-choose jb">
+                                <div class="delivery-number-item">
+                                    <div class="jb aic">
+                                        <label class="role mb-0" for="peack1" class="" style="width: 80%;">2 Meals/delivery</label>
+                                        <input type="radio" name="role" value="peack1" id="peack1">
+                                    </div>
+                                </div>
+                
+                                <div class="delivery-number-item">
+                                    <div class="jb aic">
+                                        <label class="role mb-0" for="peack1" class="" style="width: 80%;">3 Meals/delivery</label>
+                                        <input type="radio" name="role" value="peack1" id="peack1">
+                                    </div>
+                                </div>
+                
+                                <div class="delivery-number-item">
+                                    <div class="jb aic">
+                                        <label class="role mb-0" for="peack1" class="" style="width: 80%;">4 Meals/delivery</label>
+                                        <input type="radio" name="role" value="peack1" id="peack1">
+                                    </div>
+                                </div>
+                
+                                <div class="delivery-number-item">
+                                    <div class="jb aic">
+                                        <label class="role mb-0" for="peack1" class="" style="width: 80%;">5 Meals/delivery</label>
+                                        <input type="radio" name="role" value="peack1" id="peack1">
+                                    </div>
+                                </div>
+                
+                                <div class="delivery-number-item">
+                                    <div class="jb aic">
+                                        <label class="role mb-0" for="peack1" class="" style="width: 80%;">6 Meals/delivery</label>
+                                        <input type="radio" name="role" value="peack1" id="peack1">
+                                    </div>
+                                </div>
+                
+                                <div class="delivery-number-item">
+                                    <div class="jb aic">
+                                        <label class="role mb-0" for="peack1" class="" style="width: 80%;">7 Meals/delivery</label>
+                                        <input type="radio" name="role" value="peack1" id="peack1">
+                                    </div>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="profiel-card mt-5" id="goPrefered">
+                        <div class="aic">
+                            <img src="assets/img/icon-Preferred.svg">
+                            <h3 class="mid-txt ml-3 mt-0 mb-0"> Preferred meals </h3>    
+                        </div>
+                        <div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>                            
+                    </div>
+            
+                    <div class="next-btn-wrapper mb-5">
+                        <button class="app-btn btn-big " id="" style="background-color: #F1DADE; color: #BB969C;">Update Card Details</button>
+                    </div>
+            
+                    <div class="next-btn-wrapper mb-5">
+                        <button class="app-btn btn-big " id="" style="background-color: #F1DADE; color: #BB969C;">Update Delivery Address</button>
+                    </div>
+            
+            
+                    <div class="next-btn-wrapper mb-5" style="column-gap: 8px;">
+                        <button class="app-btn btn-small back-y" id="" >Pause</button>
+                        <button class="app-btn back-r btn-small" id="">Cancell</button>
+                    </div>
+            
+                    <div class="next-btn-wrapper mb-5" style="column-gap: 8px;">
+                        <button class="app-btn btn-big back-r" id="" >Save Changes</button>
+                    </div>
+                </div>                
+            </section>
+
+
+            <!-- Preferred meals -->
+
+            <section class="hero-section order-main jcaic" id="P_PreferedMealPage">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="preferedBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>Preferred Meals</h3>
+                        </div>
+                    </div>        
+                    <div class="select-meal-nav">
+                        <div class="select-nav-button-wrapper">
+                            <button class="mealnav navActive">All</button>
+                            <button class="mealnav">Popular</button>
+                            <button class="mealnav">VEG</button>
+                            <button class="mealnav">American</button>
+                            <button class="mealnav">Chinese</button>
+                            <button class="mealnav">Indian</button>                            
+                        </div>
+                    </div>
+                    <div class="product-card-wrapper">
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p1.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Chicken Caesar Salad</h3>
+                                <p class="product-detail-txt mt-0">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                            </div>
+                            <div class="product-add-btn">Add</div>
+                        </div>
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p2.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Veggie Delight Sub</h3>
+                                <p class="product-detail-txt mt-0">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                            </div>
+                            <div class="product-remove-btn">Remove</div>                            
+                        </div>
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p3.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Personal Pizza</h3>
+                                <p class="product-detail-txt mt-0">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                            </div>
+                            <div class="product-add-btn">Add</div>
+                        </div>
+            
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper next-go">
+                                <img src="assets/img/avata/p3.png">
+                            </div>
+                            <div class="product-data">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Personal Pizza</h3>
+                                <p class="product-detail-txt mt-0">Lorem Ipsum dolor set mit dor lorem ipsum dolor set mit lorem ipsum …</p>
+                            </div>
+                            <div class="product-add-btn">Add</div>
+                        </div>
+                    </div>       
+                </div>    
+            </section>
+
+            <!-- MyOrderAll -->
+            <section class="hero-section order-main jcaic" id="MyOrderAll">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="p_homesubsBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>My orders</h3>
+                        </div>
+                    </div> 
+                    
+                    <div class="profiel-card myorder-card"  id="goSubMyOrder">
+                        <div class="d-col">                
+                            <h3 class="mb-1 mt-1 mid-txt ">Business Catering</h3>               
+                            <h4 class="mb-1 mt-1 small-txt color-g"><span style="color: #848484;">October 1, 2020</span></h4>
+                            <h3 class="mb-1 mt-1 small-txt subscrip-statu" style="color: #2DAA30;" >Active</h3>
+                        </div>            
+                        <div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>                            
+                    </div>
+            
+                    <div class="profiel-card myorder-card"  id="">
+                        <div class="d-col">                
+                            <h3 class="mb-1 mt-1 mid-txt ">Lunch</h3>               
+                            <h4 class="mb-1 mt-1 small-txt color-g"><span style="color: #848484;">October 1, 2020</span></h4>
+                            <h3 class="mb-1 mt-1 small-txt subscrip-statu" style="color: #DE4959;" >Cancelled</h3>
+                        </div>            
+                        <div>
+                            <i class="fa fa-angle-right"></i>
+                        </div>                            
+                    </div>
+                </div>    
+            </section> 
+
+            <!-- subMyOrder -->
+
+            <section class="hero-section order-main jcaic" id="MyOrderSub">
+                <div class="order-page-content">
+                    <div class="second-style-page-hader mb-5">
+                        <div class="back-page-title aic">
+                            <div class="page-back-btn jcaic" id="subOrderBack"> <i class="fa fa-angle-left"></i> </div>
+                            <h3>My orders</h3>
+                        </div>
+                    </div> 
+                    
+                    <div class="product-card-wrapper mt-4">
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p1.png">
+                            </div>
+                            <div class="product-data w-100">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Chicken Caesar Salad</h3>
+                                <div class="count-wrapper jb">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div>
+            
+                        <div class="product-card pos-re">
+                            <div class="product-image-wrapper">
+                                <img src="assets/img/avata/p2.png">
+                            </div>
+                            <div class="product-data w-100">
+                                <h3 class="mid-txt mt-0" style="font-size: 15px; font-weight:bold;">Veggie Delight Sub</h3>
+                                <div class="count-wrapper jb">
+                                    <h4 class="mt-0 mb-0 aic color-r mr-5">$9.75</h4>
+                                    <div class="add-cart-wrapper">
+                                        <h5 class="mr-4 ml-4">1</h5>
+                                    </div>                                                                   
+                                </div>
+                            </div>                           
+                        </div>           
+                    </div> 
+
+                    <div class="order-sumary ma">
+                        <div class="sumary-line jb">
+                            <h4>Subtotal</h4>
+                            <h4>$18.50</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Non-Peak Hour Discount</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Delivery Fee</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Service Fee</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Discount</h4>
+                            <h4>$0.00</h4>
+                        </div>
+            
+                        <div class="sumary-line jb">
+                            <h4>Total</h4>
+                            <h3>$18.50</h3>
+                        </div>
+                    </div>
+                    <div class="app-btn red-btn btn-big ma mt-4 mb-5" id="">Pay</div>
+                </div>    
+            </section> 
+        </div>
+
+        <!-- Manage Account -->
+        <section class="hero-section order-main jcaic" id="p_ManagePage">
+            <div class="order-page-content">
+                <div class="second-style-page-hader mb-5">
+                    <div class="back-page-title aic">
+                        <div class="page-back-btn jcaic" id="p_ManageBack"> <i class="fa fa-angle-left"></i> </div>
+                        <h3>Manage Account</h3>
+                    </div>
+                </div> 
+                <div class="updateUserImg-waraper jcaic">
+                    <img src="assets/img/UpdateUserpic.svg">
+                </div>
+                <div class="create-account-form">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname"  placeholder="Put Your First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname"  placeholder="Put Your First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="dis_name">Display Name</label>
+                        <input type="text" class="form-control" id="dis_name"  placeholder="Johny">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group">
+                        <label for="reference">Reference Email</label>
+                        <input type="email" class="form-control" id="reference" aria-describedby="emailHelp" placeholder="example2@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Current Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">New Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="NewPassword">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confrim New Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Confirm Password">
+                    </div>
+                </div>
+        
+                <div class="app-btn red-btn btn-big ma mt-5 mb-5" style="width: 300px;" id="">Save Changes</div> 
+            </div>    
+        </section> 
+
+
+        <div class="footer-nav">
+            <a href="./orderNow.html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg id="burger" xmlns="http://www.w3.org/2000/svg" width="18.073" height="18.073" viewBox="0 0 18.073 18.073">
+                            <g id="Burger_1_">
+                              <path id="Path" d="M14.367,4.236H3.706A3.711,3.711,0,0,1,0,.529.529.529,0,0,1,.529,0H17.544a.529.529,0,0,1,.529.529A3.711,3.711,0,0,1,14.367,4.236Z" transform="translate(0 13.837)" fill="#707070"/>
+                              <path id="Shape" d="M.529,7.412A.529.529,0,0,1,0,6.883C0,3.088,4.073,0,9.037,0s9.036,3.088,9.036,6.883a.529.529,0,0,1-.529.529Z" fill="#707070"/>
+                            </g>
+                            <g id="Burger_4_" transform="translate(0 9.566)">
+                              <g id="Group">
+                                <path id="Path-2" data-name="Path" d="M.529,0A2.492,2.492,0,0,1,1.2.085a3.443,3.443,0,0,0-.138,1.059,1.456,1.456,0,0,0-.529-.085A.524.524,0,0,1,0,.529.524.524,0,0,1,.529,0Z" fill="#707070"/>
+                                <path id="Path-3" data-name="Path" d="M1.2.529a.524.524,0,0,1-.529.529,1.456,1.456,0,0,0-.529.085A3.663,3.663,0,0,0,0,.085,2.492,2.492,0,0,1,.667,0,.524.524,0,0,1,1.2.529Z" transform="translate(16.876)" fill="#707070"/>
+                              </g>
+                            </g>
+                            <path id="Path-4" data-name="Path" d="M0,1.144a2.756,2.756,0,0,1,1.059.551,1.6,1.6,0,0,0,1.1.424,1.572,1.572,0,0,0,1.091-.424,2.7,2.7,0,0,1,1.761-.635,2.6,2.6,0,0,1,1.737.635,1.616,1.616,0,0,0,2.182,0,2.6,2.6,0,0,1,1.737-.635,2.7,2.7,0,0,1,1.761.635,1.573,1.573,0,0,0,1.091.424,1.6,1.6,0,0,0,1.1-.424,2.757,2.757,0,0,1,1.059-.551A3.665,3.665,0,0,0,15.143,0H.537A3.665,3.665,0,0,0,0,1.144Z" transform="translate(1.197 8.507)" fill="#707070"/>
+                            <path id="Path-5" data-name="Path" d="M15.288,2.118A3.669,3.669,0,0,0,15.955.085a2.206,2.206,0,0,0-.561.339,2.6,2.6,0,0,1-1.737.635A2.59,2.59,0,0,1,11.931.424,1.665,1.665,0,0,0,10.805,0,1.6,1.6,0,0,0,9.7.424a2.567,2.567,0,0,1-1.726.635A2.567,2.567,0,0,1,6.252.424,1.6,1.6,0,0,0,5.15,0,1.665,1.665,0,0,0,4.024.424,2.59,2.59,0,0,1,2.3,1.059,2.6,2.6,0,0,1,.561.424,2.206,2.206,0,0,0,0,.085,3.669,3.669,0,0,0,.667,2.118Z" transform="translate(1.059 10.625)" fill="#707070"/>
+                        </svg>                      
+                    </div>
+                    <p>order now</p>
+                </div>
+            </a>
+            
+            <a href="./subscribe.html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg id="box" xmlns="http://www.w3.org/2000/svg" width="21.6" height="17.088" viewBox="0 0 21.6 17.088">
+                            <path id="Path" d="M13.836,0l-.32,1.338H8.085L7.764,0H0L2.284,4.127H19.316L21.6,0Z" transform="translate(0 12.961)" fill="#707070"/>
+                            <path id="Path-2" data-name="Path" d="M19.316,0H2.284L0,4.127H21.6Z" transform="translate(0 7.569)" fill="#707070"/>
+                            <path id="Path-3" data-name="Path" d="M1.468,2.882a1.381,1.381,0,0,1-.2-.767,1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23,2.6,2.6,0,0,0,1.468,2.882Z" transform="translate(5.054)" fill="#707070"/>
+                            <path id="Path-4" data-name="Path" d="M1.468,2.882a1.381,1.381,0,0,1-.2-.767,1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23,2.6,2.6,0,0,0,1.468,2.882Z" transform="translate(8.28)" fill="#707070"/>
+                            <path id="Path-5" data-name="Path" d="M1.265,2.115a1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23a2.6,2.6,0,0,0-.345-1.349A1.381,1.381,0,0,1,1.265,2.115Z" transform="translate(11.507)" fill="#707070"/>
+                            <path id="Path-6" data-name="Path" d="M1.265,2.115a1.38,1.38,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,0H.548a1.38,1.38,0,0,1-.2.767A2.6,2.6,0,0,0,0,2.115,2.6,2.6,0,0,0,.345,3.464a1.381,1.381,0,0,1,.2.767A1.381,1.381,0,0,1,.345,5,2.6,2.6,0,0,0,0,6.346H1.265a1.381,1.381,0,0,1,.2-.767A2.6,2.6,0,0,0,1.813,4.23a2.6,2.6,0,0,0-.345-1.349A1.381,1.381,0,0,1,1.265,2.115Z" transform="translate(14.733)" fill="#707070"/>
+                          </svg>
+                                              
+                    </div>
+                    <p>Subscribe</p>
+                </div>
+            </a>
+
+            <a href="./catering .html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg id="buffet" xmlns="http://www.w3.org/2000/svg" width="20.7" height="18" viewBox="0 0 20.7 18">
+                            <path id="Path" d="M0,0V1.2H1.485L2.7,3.6H8.3L7.487,6H6.1V7.2H14.6V6H13.213L12.4,3.6H18l1.213-2.4H20.7V0Z" transform="translate(0 10.8)" fill="#707070"/>
+                            <path id="Shape" d="M0,9.9A9.255,9.255,0,0,1,7.335,2.63a1.837,1.837,0,1,1,3.33,0A9.255,9.255,0,0,1,18,9.9Z" transform="translate(1.8)" fill="#707070"/>
+                          </svg>                                            
+                    </div>
+                    <p>Catering</p>
+                </div>
+            </a>
+
+            <a href="./profile.html">
+                <div class="bottom-nav">
+                    <div class="order-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17.217" viewBox="0 0 18 17.217">
+                            <path id="Shape" d="M9,17.217A8.821,8.821,0,0,1,0,8.609,8.821,8.821,0,0,1,9,0a8.821,8.821,0,0,1,9,8.608A8.821,8.821,0,0,1,9,17.217ZM7.268,9.656a2.95,2.95,0,0,0-3.017,2.871,1.19,1.19,0,0,0,.446.922,6.853,6.853,0,0,0,8.6,0,1.185,1.185,0,0,0,.445-.922,2.787,2.787,0,0,0-.88-2.034,3.071,3.071,0,0,0-2.131-.837ZM9,2.574A2.917,2.917,0,0,0,6.024,5.422,2.917,2.917,0,0,0,9,8.269a2.918,2.918,0,0,0,2.977-2.848A2.918,2.918,0,0,0,9,2.574Z" transform="translate(0 0)" fill="#de4959"/>
+                        </svg>                      
+                    </div>
+                    <p class="color-r mt-2">Profile</p>
+                    <div class="page-active-mark back-r"></div>
+                </div>
+            </a>            
+        </div>
+    </div> 
+
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#P_SignInButton").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#P_SignIn", 0.5, {'left':'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#LogInPage", 0.5, {"left":'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#LogInBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#LogInPage", 0.5, {"left":'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#P_SignIn", 0.5, {'left':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+
+            $("#LogInButton").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#LogInPage ", 0.5, {'left':'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#FullProfile", 0.5, {"right":'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#goSubscriptons").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#FullProfile", 0.5, {"right":'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#P_Subscription ", 0.5, {'right':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#p_subsBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#P_Subscription ", 0.5, {'right':'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#FullProfile", 0.5, {"right":'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#GoHomeSubscription").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#P_Subscription ", 0.5, {'right':'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#P_HomeSubscriptionPage", 0.5, {"right":'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#p_homesubsBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#P_HomeSubscriptionPage", 0.5, {"right":'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#P_Subscription ", 0.5, {'right':'0vw','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#goPrefered").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#P_HomeSubscriptionPage ", 0.5, {"right":'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#P_PreferedMealPage", 0.5, {'top':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#preferedBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#P_PreferedMealPage", 0.5, {"top":'0','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#FullProfile", 0.5, {'right':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#goMyorders").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#FullProfile", 0.5, {"right":'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#MyOrderAll", 0.5, {'top':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#goSubMyOrder").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#MyOrderAll ", 0.5, {"top":'100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#MyOrderSub", 0.5, {'top':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#subOrderBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#MyOrderSub", 0.5, {"top":'100vh','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#FullProfile", 0.5, {'right':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+            $("#goManage").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#FullProfile", 0.5, {"right":'-100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#p_ManagePage ", 0.5, {'right':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+             $("#p_ManageBack").click(function(){
+                var t3 = new TimelineMax();
+                t3.staggerTo("#p_ManagePage", 0.5, {"right":'100vw','opacity':0, ease: Power4.easeOut}, 1.5);
+                t3.staggerTo("#FullProfile", 0.5, {'right':'0','opacity':1, ease: Power4.easeOut}, 1.5);
+            });
+
+        });        	
+    </script>
+
+</body>
+</html>
